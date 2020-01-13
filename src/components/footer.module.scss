@@ -1,3 +1,16 @@
+.links a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--mainWhite);
+  margin: 0.5rem 1rem;
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+  font-weight: bold;
+  &:hover {
+    color: var(--primaryColor);
+  }
+}
 .icons a {
   display: inline-block;
   margin: 1rem;
