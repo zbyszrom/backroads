@@ -1,0 +1,16 @@
+.icons a {
+  display: inline-block;
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: var(--primaryColor);
+  transition: var(--mainTransition);
+  &:hover {
+    color: var(--primaryColor);
+  }
+}
+
+.copyright {
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+    line-height: 2;
+  }

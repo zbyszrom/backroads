@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+  }
+  .btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    &:hover {
+      cursor: pointer
+    }
+  }
+  .icon {
+    color: var(--primaryColor);
+    font-size: 1.5rem;
+  }
+  .social-links {
+    display: none;
+  }
+
+// MEDIA QUERIES -------------------------
+
+  @media screen and (min-width: 992px) {
+    .btn {
+      display: none;
+    }
+    
+    .social-links {
+      display: flex;
+      line-height: 0;
+      a {
+        color: var(--primaryColor);
+        margin: 0 0.5rem;
+        font-size: 1.2rem;
+        transition: var(--mainTransition);
+        &:hover {
+          color: var(--mainBlack);
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+  
