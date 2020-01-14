@@ -8,18 +8,25 @@ import styles from "./navbar.module.scss"
 
 
 const Navbar = () => {
-  
+  const [isOpen, setNav] = useState()
+  const toggleNav = () => {
+    setNav(isOpen => !isOpen)
+  }
   
     return (
       <nav > 
         <div className={styles.center}>
         <div className={styles.header}>      
       <img src={logo} alt="backroads logo" />
-      <button type="button" className={styles.btn}>
+      <button type="button" className={styles.btn} onClick={toggleNav}>
         <FaAlignRight className={styles.icon}/>
           </button>
         </div>
-        <ul className={styles.links}>
+        <ul className={
+          isOpen
+          ? `${styles.links} ${styles.showNav}`
+          : `${styles.links}`
+          }>
           
         {links.map((item, index) => {
             return (

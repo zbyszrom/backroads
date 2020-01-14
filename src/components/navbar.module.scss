@@ -46,6 +46,13 @@
 
 // MEDIA QUERIES -------------------------
 
+ @media screen and (min-width: 576px) {
+  .navbar {
+    padding: 0 2rem;
+  }
+}
+
+
   @media screen and (min-width: 992px) {
     .btn {
       display: none;
