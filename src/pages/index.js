@@ -1,11 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SimpleHero from "../components/SimpleHero"
 import About from "../components/about"
 import Services from '../components/services'
-
-
+import FeaturedTours from '../components/featuredTours'
 
 
 const IndexPage = () => (
@@ -13,6 +13,8 @@ const IndexPage = () => (
     <SimpleHero />
     <About />
     <Services />
+    <FeaturedTours/>
+
   
   </Layout>
 )
