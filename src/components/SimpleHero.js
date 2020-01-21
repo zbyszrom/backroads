@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import styles from './SimpleHero.module.scss'
+import styles from './simpleHero.module.scss'
 
 const SimpleHero = ({ children }) => {
   return (

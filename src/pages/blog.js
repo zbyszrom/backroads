@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 
-const blog = () => {
+const Blog = () => {
   return (
     <Layout>
       <h1>Hello from blog page</h1>
@@ -11,4 +11,4 @@ const blog = () => {
   )
 }
 
-export default blog
+export default Blog
