@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Tour from "./tour"
 
 
 const getTours = graphql`
@@ -7,6 +8,11 @@ query {
   featuredTours: allDatoCmsTour(filter: { featured: { eq: true } }) {
     edges {
       node {
+        images {
+          fluid {
+            ...GatsbyDatoCmsFluid
+          }
+        }
         name
         slug
         country
@@ -30,10 +36,8 @@ const FeaturedTours = ()=> {
         <setion className='cards'>
         
         {tours.map(({ node }) => {
-        return <div key={node.id} className="card"> 
-        <h3>{node.name} </h3>
-        <p>{node.country} </p>
-        </div>
+        return <Tour key={node.id} tour = {node} className="card" /> 
+        
       })}
         </setion>
         </>
