@@ -29,18 +29,18 @@ const FeaturedTours = ()=> {
   const tours = response.featuredTours.edges
 
     return (
-      <>
+      <section>
       <div className='title'>
       <h4>Featured <span>Tours</span></h4>
       </div>
-        <setion className='cards'>
+        <div className='center'>
         
         {tours.map(({ node }) => {
-        return <Tour key={node.id} tour = {node} className="card" /> 
+        return <Tour key={node.id} tour = {node}  /> 
         
       })}
-        </setion>
-        </>
+        </div>
+        </section>
     )
 
 }

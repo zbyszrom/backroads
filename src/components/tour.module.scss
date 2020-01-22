@@ -1,0 +1,18 @@
+.tour {
+    box-shadow: var(--lightShadow);
+    transition: var(--mainTransition);
+    &:hover {
+        box-shadow: var(--darkShadow);  
+    }
+  }
+  .img-container {
+    position: relative;
+    background: var(--primaryColor);
+    transition: var(--mainTransition);
+    margin: 0 0 1rem 0;
+  }
+  .country {
+    text-transform: capitalize;
+    color: var(--primaryColor);
+    
+  }
