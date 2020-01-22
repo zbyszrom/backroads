@@ -1,0 +1,27 @@
+.contact {
+    padding: 4rem 0;
+    label {
+        text-transform: capitalize;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+  }
+.center {
+    width: 80vw;
+    margin: 0 auto;
+  }
+.formControl {
+    width: 90%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.375rem 0.75rem;
+    border: 2px solid var(--darkGrey);
+    border-radius: 0.25rem;  
+}
+
+@media screen and (min-width: 992px) {
+    .center {
+      width: 50vw;
+      margin: 0 auto;
+    }
+  }
