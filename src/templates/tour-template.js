@@ -8,6 +8,7 @@ const Template = ({ data }) => {
   const {
     name,
     descriptionNode,
+    video,
     images,
     country,
   } = data.tour
@@ -21,7 +22,7 @@ const Template = ({ data }) => {
   <h4>{country}</h4>
   <div dangerouslySetInnerHTML={{ __html: descriptionNode.childMarkdownRemark.html }}/>
     
- 
+ <iframe src={video.url}></iframe>
   
   <div className="center">
   
@@ -51,6 +52,9 @@ export const query = graphql`
         childMarkdownRemark {
           html
         }
+      }
+      video {
+        url
       }
       images {
         fluid {
