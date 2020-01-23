@@ -13,7 +13,7 @@ const Template = ({ data }) => {
     country,
   } = data.tour
 
-  
+ //<iframe src={video.url}></iframe>
 
   return (
     <Layout>
@@ -22,7 +22,7 @@ const Template = ({ data }) => {
   <h4>{country}</h4>
   <div dangerouslySetInnerHTML={{ __html: descriptionNode.childMarkdownRemark.html }}/>
     
- <iframe src={video.url}></iframe>
+  
   
   <div className="center">
   
