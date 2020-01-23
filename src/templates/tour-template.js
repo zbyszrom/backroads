@@ -12,17 +12,18 @@ const Template = ({ data }) => {
     video,
     images,
     country,
-  } = data.tour
+    } = data.tour
+
   const Iframe = styled.div`
     padding-bottom: 56.25%; 
     position: relative; 
     display: block; 
     width: 100%;`
+    video.url = video.url.replace("watch?v=", "v/");
+if (video.url === "https://www.youtube.com/watch?v=YS3-untznOo"){
+video.url = 'brak'}
 
-//if (video.url = "https://www.youtube.com/watch?v=YS3-untznOo"){
-//video.url = 'brak'}
-
-
+console.log(video.url)
 
   return (
     <Layout>
@@ -44,7 +45,7 @@ const Template = ({ data }) => {
             })}
  
  <Iframe >
-    <iframe className ='frame'  frameborder = '0' src={video.url}></iframe>
+    <iframe className ='frame'  width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen src={video.url}></iframe>
   </Iframe>
   </div>
   </Layout>
