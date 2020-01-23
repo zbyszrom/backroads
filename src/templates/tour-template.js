@@ -7,8 +7,7 @@ import Layout from "../components/layout"
 const Template = ({ data }) => {
   const {
     name,
-    
-    description,
+    descriptionNode,
     images,
     country,
   } = data.tour
@@ -20,7 +19,9 @@ const Template = ({ data }) => {
 
   <h1>{name}</h1>
   <h4>{country}</h4>
-  <p>{description}</p>
+  <div dangerouslySetInnerHTML={{ __html: descriptionNode.childMarkdownRemark.html }}/>
+    
+ 
   
   <div className="center">
   
@@ -46,7 +47,11 @@ export const query = graphql`
     tour: datoCmsTour(slug: { eq: $slug }) {
       name
       country 
-      description     
+      descriptionNode {
+        childMarkdownRemark {
+          html
+        }
+      }
       images {
         fluid {
           ...GatsbyDatoCmsFluid_tracedSVG
