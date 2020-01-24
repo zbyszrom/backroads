@@ -9,8 +9,8 @@ const SimpleHero = ({ children }) => {
   
   <div className={styles.banner}>
   <h1> Continue exploring</h1>
-  <p>Welcome to your new Gatsby site.</p>
-  <Link to="/tours" className = "btn-white">expolore tours</Link>
+  <p>Welcome to my presentation</p>
+  <Link to="/tours" className = "btn-white">all tours</Link>
   
   </div>
   </header>

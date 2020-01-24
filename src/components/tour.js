@@ -1,7 +1,6 @@
 import React from "react"
 import Image from "gatsby-image"
-//import { useStaticQuery, graphql } from "gatsby"
-import { Link, navigate } from 'gatsby'
+import { Link} from 'gatsby'
 import styles from "./tour.module.scss"
 
 const Tour = ({ tour }) => {

@@ -45,7 +45,7 @@ console.log(video.url)
             })}
  
  <Iframe >
-    <iframe className ='frame'  width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen src={video.url}></iframe>
+    <iframe className ='frame' title={name} width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen src={video.url}></iframe>
   </Iframe>
   </div>
   </Layout>
