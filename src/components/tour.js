@@ -1,10 +1,11 @@
 import React from "react"
 import Image from "gatsby-image"
 //import { useStaticQuery, graphql } from "gatsby"
+import { Link, navigate } from 'gatsby'
 import styles from "./tour.module.scss"
 
 const Tour = ({ tour }) => {
-    const { name, country, images} = tour
+    const { name, country, images, slug} = tour
     let mainImage = images[0].fluid
  
     return (
@@ -13,8 +14,10 @@ const Tour = ({ tour }) => {
         <div className ="">
         <div className={styles.imgContainer}>  
         <Image fluid = {mainImage} />
-        </div> 
+        </div>
+        <Link to={`/tours/${slug}`}> 
         <h3>{name}</h3>
+        </Link>
         <h4 className= {styles.country}>{country}</h4>
         </div>
         </>

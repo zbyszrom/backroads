@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Tour from "./tour"
+import { Link } from "gatsby"
 
 
 const getTours = graphql`
@@ -40,6 +41,11 @@ const FeaturedTours = ()=> {
         
       })}
         </div>
+        <div style={{textAlign: 'center'}}>
+      <Link to="/tours" className = 'btn-primary'>
+        All tours
+      </Link>
+      </div>
         </section>
     )
 
