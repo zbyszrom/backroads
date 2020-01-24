@@ -1,4 +1,5 @@
 import React from "react"
+import ToursC from "../components/tours-comp"
 
 
 import Layout from "../components/layout"
@@ -7,8 +8,8 @@ import Layout from "../components/layout"
 const Tours = () => (
   <Layout>
    
-    <h1>Hi from tours page</h1>
     
+    <ToursC/>
     
   </Layout>
 )
